@@ -23,9 +23,9 @@ public class PlayerAnimation : MonoBehaviour
         Defend = Animator.StringToHash("Defend");
     }
 
-    public void MovementAnimation(float movementBlendValue)
+    public void MovementAnimation(float Value)
     {
-        anim.SetFloat(Move, movementBlendValue);
+        anim.SetFloat(Move, Value);
     }
 
     public void AttackAnimation()
