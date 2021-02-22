@@ -43,6 +43,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+
     void SpawnPlayers()
     {
 
@@ -71,6 +72,8 @@ public class GameManager : Singleton<GameManager>
         }
 
         SpawnPlayers();
+
+        Activate();
     }
 
     private void SinglePlayer()
@@ -94,7 +97,7 @@ public class GameManager : Singleton<GameManager>
     {
         for (int i = 0; i < activeControllers.Count; i++)
         {
-            activeControllers[i].SetupPlayer();
+            activeControllers[i].SetupPlayer(i);
         }
     }
     Vector3 PositionInRing(int positionID, int numberOfPlayers)
