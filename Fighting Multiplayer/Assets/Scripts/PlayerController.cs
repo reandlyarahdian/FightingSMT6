@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public PlayerAnimation anim;
     public string currentControl;
-    public void SetupPlayer(int i)
+    public void SetupPlayer()
     {
         currentControl = input.currentControlScheme;
 
