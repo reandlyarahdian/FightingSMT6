@@ -21,7 +21,7 @@ public class TImer : MonoBehaviour
 
         if (timer <= 0)
         {
-            timer = 30;
+            timer = 120;
         }
     }
 }
