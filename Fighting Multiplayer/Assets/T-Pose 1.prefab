@@ -347,7 +347,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7641784382514931117}
+<<<<<<< Updated upstream
   - component: {fileID: 1364596941803591600}
+=======
+  - component: {fileID: 1495059754381865192}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
@@ -374,7 +378,11 @@ Transform:
   m_Father: {fileID: 6261752622335561367}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!65 &1364596941803591600
+=======
+--- !u!65 &1495059754381865192
+>>>>>>> Stashed changes
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,8 +393,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Size: {x: 1, y: 2.282245, z: 1}
   m_Center: {x: 0.00000054075497, y: 1.2109922, z: 0.00000010719237}
+=======
+  m_Size: {x: 1.3779497, y: 2.3367715, z: 1}
+  m_Center: {x: 0.18897535, y: 1.0986072, z: 0.0000002495143}
+>>>>>>> Stashed changes
 --- !u!1 &1085586967665536947
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +502,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2991756250886655910}
+<<<<<<< Updated upstream
   - component: {fileID: 6507932873679914024}
+=======
+  - component: {fileID: 5752723662714183531}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -516,7 +533,11 @@ Transform:
   m_Father: {fileID: 1414737585815471558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!65 &6507932873679914024
+=======
+--- !u!65 &5752723662714183531
+>>>>>>> Stashed changes
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,8 +548,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Size: {x: 1, y: 2.282245, z: 1}
   m_Center: {x: 0.00000054075497, y: 1.2109922, z: 0.00000010719237}
+=======
+  m_Size: {x: 1.3779497, y: 2.3367715, z: 1}
+  m_Center: {x: -0.1889753, y: 1.0986072, z: 0.0000002495143}
+>>>>>>> Stashed changes
 --- !u!1 &1705069722680603235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1411,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &4494337643939928347
 GameObject:

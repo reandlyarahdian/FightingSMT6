@@ -769,8 +769,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebbd23e509e6404b9662d907fb29aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   GameMode: 1
   inScenePlayer: {fileID: 261794253}
+=======
+  gameMode: 1
+  inScenePlayer: {fileID: 0}
+>>>>>>> Stashed changes
   playerPrefab: {fileID: 4391044194559429951, guid: aab6ae18680bf8e42813e11f2b22fab5,
     type: 3}
   numberOfPlayers: 2

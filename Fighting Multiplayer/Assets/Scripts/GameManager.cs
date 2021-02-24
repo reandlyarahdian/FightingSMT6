@@ -10,12 +10,19 @@ public enum GameMode
     LocalMultiplayer,
     OnlineMultiplayer
 }
+<<<<<<< Updated upstream
 
 
 public class GameManager : Singleton<GameManager>
 {
     public GameMode GameMode;
 
+=======
+
+public class GameManager : Singleton<GameManager>
+{
+    public GameMode gameMode;
+>>>>>>> Stashed changes
     public GameObject inScenePlayer;
     private PlayerController Controller;
 
@@ -25,6 +32,7 @@ public class GameManager : Singleton<GameManager>
     public Transform spawnRingCenter;
     public float spawnRingRadius;
 
+<<<<<<< Updated upstream
     private List<PlayerController> activePlayerControllers;
 
     void Start()
@@ -35,6 +43,19 @@ public class GameManager : Singleton<GameManager>
     void SetupBasedOnGameState()
     {
         switch (GameMode)
+=======
+    //Spawned Players
+    private List<PlayerController> PlayerControllers;
+
+    void Start()
+    {
+        GameState();
+    }
+
+    void GameState()
+    {
+        switch (gameMode)
+>>>>>>> Stashed changes
         {
             case GameMode.SinglePlayer:
                 SetupSinglePlayer();
@@ -49,6 +70,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+<<<<<<< Updated upstream
     private void SetupOnlineMultiplayer()
     {
         throw new NotImplementedException();
@@ -82,6 +104,49 @@ public class GameManager : Singleton<GameManager>
     {
 
         activePlayerControllers = new List<PlayerController>();
+=======
+    private void SetupSinglePlayer()
+    {
+        PlayerControllers = new List<PlayerController>();
+
+        if (inScenePlayer == true)
+        {
+            AddPlayerToActivePlayerList(inScenePlayer.GetComponent<PlayerController>());
+        }else 
+            SpawnPlayers();
+
+        Activate();
+    }
+
+    private void SetupOnlineMultiplayer()
+    {
+        if (inScenePlayer == true)
+        {
+            Destroy(inScenePlayer);
+        }
+
+        SpawnPlayers();
+
+        Activate();
+    }
+
+    private void SetupLocalMultiplayer()
+    {
+        if (inScenePlayer == true)
+        {
+            Destroy(inScenePlayer);
+        }
+
+        SpawnPlayers();
+
+        Activate();
+    }
+
+    void SpawnPlayers()
+    {
+
+        PlayerControllers = new List<PlayerController>();
+>>>>>>> Stashed changes
 
         for (int i = 0; i < numberOfPlayers; i++)
         {
@@ -89,6 +154,7 @@ public class GameManager : Singleton<GameManager>
             Quaternion spawnRotation = CalculateRotation(i);
 
             GameObject spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation) as GameObject;
+<<<<<<< Updated upstream
             PlayerToActive(spawnedPlayer.GetComponent<PlayerController>());
         }
     }
@@ -107,11 +173,35 @@ public class GameManager : Singleton<GameManager>
     }
 
     Vector3 CalculatePositionInRing(int positionID, int numberOfPlayers)
+=======
+            AddPlayerToActivePlayerList(spawnedPlayer.GetComponent<PlayerController>());
+        }
+    }
+
+    private void AddPlayerToActivePlayerList(PlayerController playerController)
+    {
+        PlayerControllers.Add(playerController);
+    }
+
+    void Activate()
+    {
+        for (int i = 0; i < PlayerControllers.Count; i++)
+        {
+            PlayerControllers[i].SetupPlayer();
+        }
+    }
+
+    Vector3 CalculatePositionInRing(int i, int numberOfPlayers)
+>>>>>>> Stashed changes
     {
         if (numberOfPlayers == 1)
             return spawnRingCenter.position;
 
+<<<<<<< Updated upstream
         float angle = (positionID) * Mathf.PI * 2 / numberOfPlayers;
+=======
+        float angle = (i) * Mathf.PI * 2 / numberOfPlayers;
+>>>>>>> Stashed changes
         float x = Mathf.Cos(angle) * spawnRingRadius;
         float z = Mathf.Sin(angle) * spawnRingRadius;
         return spawnRingCenter.position + new Vector3(x, 0, z);
