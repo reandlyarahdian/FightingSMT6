@@ -1,0 +1,149 @@
+{
+    "name": "Player1",
+    "maps": [
+        {
+            "name": "1",
+            "id": "2a5fb664-12ad-4a9d-a78a-030e3b5b695c",
+            "actions": [
+                {
+                    "name": "1",
+                    "type": "Value",
+                    "id": "f25874ed-fdbd-47bb-b7e7-c8be75603546",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "2",
+                    "type": "Button",
+                    "id": "e3c4fcdb-99e2-4adc-ae3e-ad868d7dce02",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "3",
+                    "type": "Button",
+                    "id": "5898743f-2f5a-49a9-824b-b9e24278dc27",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9d08674d-0dee-4cf5-98c4-85ac61696936",
+                    "path": "<HID::Twin USB Gamepad      >/hat",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 1",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5643257f-f89f-425a-9f0b-f080b96efcb3",
+                    "path": "<HID::Twin USB Gamepad      >/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 1",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4edee89a-1c77-44f9-aedf-14e0fc60a1b2",
+                    "path": "<HID::Twin USB Gamepad      >/hat",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 2",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb01aa90-f337-4b1f-883f-73e50cc7fe9f",
+                    "path": "<HID::Twin USB Gamepad      >/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 2",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "49190314-f9ee-4c82-8a0b-4439541d38e6",
+                    "path": "<HID::Twin USB Gamepad      >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 1",
+                    "action": "2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0dd5fec-f0d4-4388-a3e6-928eca72eb0a",
+                    "path": "<HID::Twin USB Gamepad      >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 2",
+                    "action": "2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6c1ab60-b9fd-4562-9d14-c5a9f1ec3ab3",
+                    "path": "<HID::Twin USB Gamepad      >/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 1",
+                    "action": "3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06d5023d-fbdf-4799-808f-03e9c2930260",
+                    "path": "<HID::Twin USB Gamepad      >/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player 2",
+                    "action": "3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Player 1",
+            "bindingGroup": "Player 1",
+            "devices": [
+                {
+                    "devicePath": "<HID::Twin USB Gamepad      >",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Player 2",
+            "bindingGroup": "Player 2",
+            "devices": [
+                {
+                    "devicePath": "<HID::Twin USB Gamepad      >",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
