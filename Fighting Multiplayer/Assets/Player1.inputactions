@@ -54,26 +54,59 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "4edee89a-1c77-44f9-aedf-14e0fc60a1b2",
-                    "path": "<HID::Twin USB Gamepad      >/hat",
+                    "name": "2D Vector",
+                    "id": "7c5095f4-4b52-449a-9617-db0aedcd093b",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 2",
+                    "groups": "",
                     "action": "1",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "eb01aa90-f337-4b1f-883f-73e50cc7fe9f",
-                    "path": "<HID::Twin USB Gamepad      >/stick",
+                    "name": "up",
+                    "id": "1d05ed4a-03ff-4c82-b885-738fe8ec1cfa",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 2",
+                    "groups": "KeyBoard And Mouse",
                     "action": "1",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "cd7e4a8b-6f69-4c0b-a9d3-06996aac3a63",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoard And Mouse",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "0fae02f2-503f-48ea-b880-8581e93eabb3",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoard And Mouse",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "e1ba12d9-2452-4e4c-b97f-c1272a5da57d",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoard And Mouse",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -88,11 +121,11 @@
                 },
                 {
                     "name": "",
-                    "id": "b0dd5fec-f0d4-4388-a3e6-928eca72eb0a",
-                    "path": "<HID::Twin USB Gamepad      >/button2",
+                    "id": "16727e48-f39b-4f7a-9957-65144d1e76dd",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 2",
+                    "groups": "KeyBoard And Mouse",
                     "action": "2",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -110,11 +143,11 @@
                 },
                 {
                     "name": "",
-                    "id": "06d5023d-fbdf-4799-808f-03e9c2930260",
-                    "path": "<HID::Twin USB Gamepad      >/button4",
+                    "id": "4bb0be16-439d-4e49-b326-9d07ef2fadd5",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 2",
+                    "groups": "KeyBoard And Mouse",
                     "action": "3",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -135,11 +168,16 @@
             ]
         },
         {
-            "name": "Player 2",
-            "bindingGroup": "Player 2",
+            "name": "KeyBoard And Mouse",
+            "bindingGroup": "KeyBoard And Mouse",
             "devices": [
                 {
-                    "devicePath": "<HID::Twin USB Gamepad      >",
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
                     "isOptional": false,
                     "isOR": false
                 }
