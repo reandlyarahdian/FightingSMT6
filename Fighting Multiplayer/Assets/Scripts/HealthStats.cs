@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,42 +9,54 @@ public class HealthStats : MonoBehaviour
     public int maxHealth;
     public int CurrentHealth;
 
-    public HealthBar healthBar;
     public GameObject health1, health2;
-    public bool health11, health22;
+    private HealthBar healthBar;
 
     // Start is called before the first frame update
-    void Start()
+    public void SetupBehaviour()
+    {
+        SetupHealth();
+        SetupMaxHealth();
+    }
+
+    private void SetupHealth()
+    {
+        SetupBar();
+    }
+
+    private void SetupMaxHealth()
     {
         maxHealth = SetMaxHealthFromHealthLevel();
         CurrentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        health1.SetActive(true);
-        health11 = true;
-        health22 = false;
-        health2.SetActive(false);
     }
 
-    void Update()
+    public void UpdateHealth(int i)
     {
-        if (Input.GetButtonDown("Fire 3"))
-        {
-            CurrentHealth = CurrentHealth - 10;
-            healthBar.SetCurrentHealth(CurrentHealth);
-            Debug.Log("udah kepejet");
-        }
+        CurrentHealth -= i;
+        healthBar.SetCurrentHealth(CurrentHealth);
+        UpdateBar();
+    }
 
-        if (health1 == true && CurrentHealth <= 0)
+    private void UpdateBar()
+    {
+        if (CurrentHealth < 0)
         {
             health1.SetActive(false);
-            health11 = false;
-            health22 = true;
+            healthBar = health2.GetComponent<HealthBar>();
             health2.SetActive(true);
         }
     }
+
     private int SetMaxHealthFromHealthLevel()
     {
         maxHealth = healthLevel * 10;
         return maxHealth;
+    }
+
+    void SetupBar()
+    {
+        health1.SetActive(true);
+        healthBar = health1.GetComponent<HealthBar>();
     }
 }

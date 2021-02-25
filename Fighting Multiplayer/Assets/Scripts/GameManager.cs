@@ -21,13 +21,14 @@ public class GameManager : Singleton<GameManager>
 
     //Local Multiplayer
     public GameObject playerPrefab;
-    public int numberOfPlayers;
+    private int numberOfPlayers = 2;
 
     public Transform spawnRingCenter;
     public float spawnRingRadius;
 
     //Spawned Players
     private List<PlayerController> activePlayerControllers;
+    public List<HealthStats> stats;
     void Start()
     {
 
@@ -106,7 +107,7 @@ public class GameManager : Singleton<GameManager>
     {
         for (int i = 0; i < activePlayerControllers.Count; i++)
         {
-            activePlayerControllers[i].SetupPlayer();
+            activePlayerControllers[i].SetupPlayer(stats[i]);
         }
     }
 

@@ -13,12 +13,20 @@ public class PlayerController : MonoBehaviour
 
     public PlayerAnimation anim;
     public string currentControl;
-    public void SetupPlayer()
+    public HealthStats health;
+    public void SetupPlayer(HealthStats stats)
     {
         currentControl = input.currentControlScheme;
-
+        stats.SetupBehaviour();
         anim.SetupBehaviour();
+        health = stats;
     }
+
+    public void onDamage(int i)
+    {
+        health.UpdateHealth(i);
+    }
+
     public void OnControlsChanged()
     {
 
