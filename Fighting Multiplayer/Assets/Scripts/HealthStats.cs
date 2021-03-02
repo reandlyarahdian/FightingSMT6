@@ -35,17 +35,18 @@ public class HealthStats : MonoBehaviour
     {
         CurrentHealth -= i;
         healthBar.SetCurrentHealth(CurrentHealth);
-        UpdateBar();
+        if (CurrentHealth <= 0)
+        {
+            UpdateBar();
+        }
     }
 
     private void UpdateBar()
     {
-        if (CurrentHealth < 0)
-        {
-            health1.SetActive(false);
-            healthBar = health2.GetComponent<HealthBar>();
-            health2.SetActive(true);
-        }
+        health1.SetActive(false);
+        healthBar = health2.GetComponent<HealthBar>();
+        health2.SetActive(true);
+        SetupMaxHealth();
     }
 
     private int SetMaxHealthFromHealthLevel()
