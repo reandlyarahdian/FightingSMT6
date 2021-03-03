@@ -10,7 +10,6 @@ public class PlayerAnimation : MonoBehaviour
     private int Move;
     private int Attack;
     private int Defend;
-    private int Hit;
 
     public void SetupBehaviour()
     {
@@ -22,7 +21,6 @@ public class PlayerAnimation : MonoBehaviour
         Move = Animator.StringToHash("Speed");
         Attack = Animator.StringToHash("Punch");
         Defend = Animator.StringToHash("Defend");
-        Hit = Animator.StringToHash("Hit");
     }
 
     public void MovementAnimation(float movementBlendValue)
@@ -37,10 +35,5 @@ public class PlayerAnimation : MonoBehaviour
     public void DefendAnimation()
     {
         anim.SetTrigger(Defend);
-    }
-
-    public void HitAnimation()
-    {
-        anim.SetTrigger(Hit);
     }
 }

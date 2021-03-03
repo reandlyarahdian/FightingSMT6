@@ -62,13 +62,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ControlManager.cs" />
+    <Compile Include="Assets\Scripts\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\HealthStats.cs" />
+    <Compile Include="Assets\Scripts\Move.cs" />
+    <Compile Include="Assets\Scripts\MoveManager.cs" />
+    <Compile Include="Assets\Scripts\MovesEnum.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerControllerCombo.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\TImer.cs" />
+    <Compile Include="Assets\Scripts\Trigger.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -253,7 +261,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -601,52 +609,52 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Animation.Rigging.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Animation.Rigging.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/New folder/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/alwan/Downloads/Brocha W00 Bold/Content/FightingSMT6-master/Fighting Multiplayer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
