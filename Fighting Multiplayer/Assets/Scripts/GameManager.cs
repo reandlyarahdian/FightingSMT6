@@ -26,12 +26,17 @@ public class GameManager : Singleton<GameManager>
     public Transform spawnRingCenter;
     public float spawnRingRadius;
 
+    public GameObject canvas;
+
     //Spawned Players
     private List<PlayerController> activePlayerControllers;
     public List<HealthStats> stats;
     void Start()
     {
-
+        for (int i = 0; i < numberOfPlayers; i++) 
+        {
+            stats.Add(canvas.GetComponentsInChildren<HealthStats>()[i]);
+        }
         SetupBasedOnGameState();
     }
 

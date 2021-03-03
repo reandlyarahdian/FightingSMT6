@@ -1083,13 +1083,13 @@ MonoBehaviour:
   event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: e5e5e4d68f31cf74aa2165c9649d9266, type: 2}
-        m_MethodName: Raise
-        m_Mode: 1
+      - m_Target: {fileID: 4391044194559429945}
+        m_MethodName: onDamage
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1155,13 +1155,13 @@ MonoBehaviour:
   event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: eef08a1e5ec34cb4bae5dcc69e22f34a, type: 2}
-        m_MethodName: Raise
-        m_Mode: 1
+      - m_Target: {fileID: 4391044194559429945}
+        m_MethodName: onDamage
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1242,8 +1242,6 @@ GameObject:
   - component: {fileID: 4391044194559429945}
   - component: {fileID: 4391044194559429944}
   - component: {fileID: 4391044194559429946}
-  - component: {fileID: 8608209238359083695}
-  - component: {fileID: 4966277616396340554}
   m_Layer: 0
   m_Name: T-Pose 1
   m_TagString: Player
@@ -1281,7 +1279,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 660ad07e2e9fa044da6861c5c77384ac, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1444,60 +1442,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &8608209238359083695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4391044194559429951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f00d4d948c9aef408483e9d8551687c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: e5e5e4d68f31cf74aa2165c9649d9266, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4391044194559429945}
-        m_MethodName: onDamage
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &4966277616396340554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4391044194559429951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f00d4d948c9aef408483e9d8551687c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: eef08a1e5ec34cb4bae5dcc69e22f34a, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4391044194559429945}
-        m_MethodName: onDamage
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &4494337643939928347
 GameObject:
   m_ObjectHideFlags: 0

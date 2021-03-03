@@ -10,7 +10,7 @@ public class HealthStats : MonoBehaviour
     public int CurrentHealth;
 
     public GameObject health1, health2;
-    private HealthBar healthBar;
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
     public void SetupBehaviour()
