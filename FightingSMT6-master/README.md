@@ -1,2 +1,2 @@
 # FightingSMT6
-Dibuat untuk praktek 
+# Dibuat untuk praktek 
