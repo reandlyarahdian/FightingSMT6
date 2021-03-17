@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,48 +8,45 @@ public class HealthStats : MonoBehaviour
     public int healthLevel = 10;
     public int maxHealth;
     public int CurrentHealth;
-    public int damage = 7;
-    public PlayerAnimation anim;
-    public HealthBar healthBar;
+
     public GameObject health1, health2;
-    public bool health11, health22;
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
-    void Start()
+    public void SetupBehaviour()
+    {
+        SetupHealth();
+        SetupMaxHealth();
+    }
+
+    private void SetupHealth()
+    {
+        SetupBar();
+    }
+
+    private void SetupMaxHealth()
     {
         maxHealth = SetMaxHealthFromHealthLevel();
         CurrentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        health1.SetActive(true);
-        health11 = true;
-        health22 = false;
-        health2.SetActive(false);
     }
 
-    void Update()
+    public void UpdateHealth(int i)
     {
-        if (Input.GetButtonDown("Fire 3"))
-        {
-            CurrentHealth = CurrentHealth - 10;
-            healthBar.SetCurrentHealth(CurrentHealth);
-            anim.HitAnimation();
-            Debug.Log("udah kepejet");
-        }
-
-        if (health1 == true && CurrentHealth <= 0)
-        {
-            health1.SetActive(false);
-            health11 = false;
-            health22 = true;
-            health2.SetActive(true);
-        }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        CurrentHealth = CurrentHealth - damage;
+        CurrentHealth -= i;
         healthBar.SetCurrentHealth(CurrentHealth);
-        anim.HitAnimation();
+        if (CurrentHealth <= 0)
+        {
+            UpdateBar();
+        }
+    }
+
+    private void UpdateBar()
+    {
+        health1.SetActive(false);
+        healthBar = health2.GetComponent<HealthBar>();
+        health2.SetActive(true);
+        SetupMaxHealth();
     }
 
     private int SetMaxHealthFromHealthLevel()
@@ -57,11 +55,9 @@ public class HealthStats : MonoBehaviour
         return maxHealth;
     }
 
-    private void OnTriggerEnter(Collider other)
+    void SetupBar()
     {
-        if (other.tag == "BOX")
-        {
-            TakeDamage(damage);
-        }
+        health1.SetActive(true);
+        healthBar = health1.GetComponent<HealthBar>();
     }
 }

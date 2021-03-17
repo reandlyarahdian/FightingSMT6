@@ -347,6 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7641784382514931117}
+  - component: {fileID: 4593485804468480155}
   m_Layer: 0
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
@@ -373,6 +374,19 @@ Transform:
   m_Father: {fileID: 6261752622335561367}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4593485804468480155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031385381044894114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7930974, y: 2.016896, z: 1}
+  m_Center: {x: 0.39654884, y: 1.0630424, z: 0.00000023170388}
 --- !u!1 &1085586967665536947
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2991756250886655910}
+  - component: {fileID: 8698330905622473621}
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -501,6 +516,19 @@ Transform:
   m_Father: {fileID: 1414737585815471558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8698330905622473621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557920007201660271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7930974, y: 2.016896, z: 1}
+  m_Center: {x: -0.3965488, y: 1.0630424, z: 0.00000023170388}
 --- !u!1 &1705069722680603235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3472687353431564432}
   - component: {fileID: 3472687353431564433}
+  - component: {fileID: 2034410561430853971}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -1034,11 +1063,37 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3472687353431564439}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 2.3, z: 2.3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2034410561430853971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472687353431564439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c0bed139674004998275400174e16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4391044194559429945}
+        m_MethodName: onDamage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3472687354353781084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,8 +1104,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3472687354353781085}
   - component: {fileID: 3472687354353781086}
+  - component: {fileID: 6199887709184905430}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1079,11 +1135,37 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3472687354353781084}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.28, y: 5.72, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6199887709184905430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472687354353781084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c0bed139674004998275400174e16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4391044194559429945}
+        m_MethodName: onDamage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3615920753315541544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1279,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 660ad07e2e9fa044da6861c5c77384ac, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1330,6 +1412,7 @@ MonoBehaviour:
   speed: 15
   anim: {fileID: 4391044194559429944}
   currentControl: 
+  health: {fileID: 0}
 --- !u!114 &4391044194559429944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,7 +1440,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &4494337643939928347
 GameObject:

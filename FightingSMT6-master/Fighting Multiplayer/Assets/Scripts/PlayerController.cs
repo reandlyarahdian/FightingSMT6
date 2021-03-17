@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,12 +14,22 @@ public class PlayerController : MonoBehaviour
 
     public PlayerAnimation anim;
     public string currentControl;
-    public void SetupPlayer()
+    public HealthStats health;
+    private int test = 0;
+
+    public void SetupPlayer(HealthStats stats)
     {
         currentControl = input.currentControlScheme;
-
+        stats.SetupBehaviour();
         anim.SetupBehaviour();
+        health = stats;
     }
+
+    public void onDamage(int i)
+    {
+        health.UpdateHealth(i);
+    }
+
     public void OnControlsChanged()
     {
 
@@ -44,7 +55,20 @@ public class PlayerController : MonoBehaviour
     {
         if (callback.started)
         {
-            anim.AttackAnimation();
+            test = Random.Range(1, 3);
+            anim.AttackAnimation(test);
+        }
+        else if (callback.canceled)
+        {
+            anim.AttackAnimation(0);
+        }
+    }
+
+    public void OnHeavyAttack(InputAction.CallbackContext callback)
+    {
+        if (callback.started)
+        {
+            anim.HeavyAttackAnimation();
         }
     }
 
@@ -52,7 +76,11 @@ public class PlayerController : MonoBehaviour
     {
         if (callback.started)
         {
-            anim.DefendAnimation();
+            anim.DefendAnimation(callback.started);
+        }
+        else if (callback.canceled)
+        {
+            anim.DefendAnimation(!callback.canceled);
         }
     }
 
