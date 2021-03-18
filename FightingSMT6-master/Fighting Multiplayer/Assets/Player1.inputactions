@@ -19,7 +19,7 @@
                     "id": "e3c4fcdb-99e2-4adc-ae3e-ad868d7dce02",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": ""
                 },
                 {
                     "name": "3",
@@ -27,7 +27,7 @@
                     "id": "5898743f-2f5a-49a9-824b-b9e24278dc27",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": ""
                 },
                 {
                     "name": "4",
@@ -120,7 +120,7 @@
                     "name": "",
                     "id": "49190314-f9ee-4c82-8a0b-4439541d38e6",
                     "path": "<HID::Twin USB Gamepad      >/button2",
-                    "interactions": "",
+                    "interactions": "MultiTap",
                     "processors": "",
                     "groups": "Player 1",
                     "action": "2",
@@ -131,7 +131,7 @@
                     "name": "",
                     "id": "16727e48-f39b-4f7a-9957-65144d1e76dd",
                     "path": "<Keyboard>/a",
-                    "interactions": "",
+                    "interactions": "MultiTap",
                     "processors": "",
                     "groups": "KeyBoard And Mouse",
                     "action": "2",

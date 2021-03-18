@@ -6,9 +6,13 @@ using UnityEngine.Events;
 public class Trigger : MonoBehaviour
 {
     public UnityEvent @event;
+    public string Tag;
 
     private void OnTriggerEnter(Collider other)
     {
-        @event.Invoke();
+        if (other.CompareTag(Tag))
+        {
+            @event.Invoke();
+        }
     }
 }

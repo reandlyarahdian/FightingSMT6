@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebbd23e509e6404b9662d907fb29aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentGameMode: 0
+  currentGameMode: 1
   inScenePlayer: {fileID: 433767028}
   playerPrefab: {fileID: 2446635327165884580, guid: ce00d4c245d9eef4cbfe15b023468c2a,
     type: 3}
@@ -274,12 +274,17 @@ PrefabInstance:
     - target: {fileID: 4464319416349553785, guid: dc234abb653a7d649909684ed43f9858,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4464319416596500877, guid: dc234abb653a7d649909684ed43f9858,
         type: 3}
       propertyPath: m_Name
       value: Slider (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464319416596500877, guid: dc234abb653a7d649909684ed43f9858,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4464319416701389618, guid: dc234abb653a7d649909684ed43f9858,
         type: 3}
@@ -812,6 +817,11 @@ PrefabInstance:
     - target: {fileID: 4464319416349553785, guid: dc234abb653a7d649909684ed43f9858,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464319416596500877, guid: dc234abb653a7d649909684ed43f9858,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4464319416701389618, guid: dc234abb653a7d649909684ed43f9858,
@@ -934,6 +944,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4464319417626241215, guid: dc234abb653a7d649909684ed43f9858,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc234abb653a7d649909684ed43f9858, type: 3}
 --- !u!1001 &1234608672
@@ -1002,6 +1017,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340871658324197794, guid: ce00d4c245d9eef4cbfe15b023468c2a,
+        type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: KeyBoard And Mouse
       objectReference: {fileID: 0}
     - target: {fileID: 3340871658324197794, guid: ce00d4c245d9eef4cbfe15b023468c2a,
         type: 3}

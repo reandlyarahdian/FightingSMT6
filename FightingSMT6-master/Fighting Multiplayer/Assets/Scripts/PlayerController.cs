@@ -58,6 +58,11 @@ public class PlayerController : MonoBehaviour
             test = Random.Range(1, 3);
             anim.AttackAnimation(test);
         }
+        else if(callback.performed)
+        {
+            anim.AttackSecond();
+            anim.AttackAnimation(0);
+        }
         else if (callback.canceled)
         {
             anim.AttackAnimation(0);
@@ -89,9 +94,24 @@ public class PlayerController : MonoBehaviour
         anim.MovementAnimation(raw);
     }
 
+    private void Update()
+    {
+        StartCoroutine(onBuff());
+    }
+
     private void FixedUpdate()
     {
         character.velocity = new Vector3(raw * speed, 0, 0);
         AnimatorMove();
+    }
+
+    IEnumerator onBuff()
+    {
+        if (health.health2.activeSelf)
+        {
+            speed = 18.75f;
+            yield return new WaitForSeconds(5);
+            speed = 15f;
+        }
     }
 }

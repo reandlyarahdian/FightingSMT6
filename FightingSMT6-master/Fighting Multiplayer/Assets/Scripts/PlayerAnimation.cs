@@ -33,9 +33,13 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     public void AttackAnimation(float test)
+    { 
+        anim.SetFloat(RandomAttack, test);
+    }
+
+    public void AttackSecond()
     {
         anim.SetTrigger(Attack);
-        anim.SetFloat(RandomAttack, test);
     }
     public void DefendAnimation(bool test)
     {

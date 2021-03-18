@@ -41,7 +41,7 @@ public class HealthStats : MonoBehaviour
         }
     }
 
-    private void UpdateBar()
+    public void UpdateBar()
     {
         health1.SetActive(false);
         healthBar = health2.GetComponent<HealthBar>();
@@ -49,13 +49,13 @@ public class HealthStats : MonoBehaviour
         SetupMaxHealth();
     }
 
-    private int SetMaxHealthFromHealthLevel()
+    public int SetMaxHealthFromHealthLevel()
     {
         maxHealth = healthLevel * 10;
         return maxHealth;
     }
 
-    void SetupBar()
+    public void SetupBar()
     {
         health1.SetActive(true);
         healthBar = health1.GetComponent<HealthBar>();
