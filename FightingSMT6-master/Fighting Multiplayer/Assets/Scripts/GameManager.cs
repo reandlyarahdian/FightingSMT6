@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public enum GameMode
 {
@@ -20,7 +21,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject inScenePlayer;
 
     //Local Multiplayer
-    public GameObject playerPrefab;
+    public GameObject[] playerPrefab;
     private int numberOfPlayers = 2;
 
     public Transform spawnRingCenter;
@@ -28,11 +29,14 @@ public class GameManager : Singleton<GameManager>
 
     public GameObject canvas;
 
+    public CinemachineTargetGroup target;
+
     //Spawned Players
     private List<PlayerController> activePlayerControllers;
     public List<HealthStats> stats;
     void Start()
     {
+        GameSetting.Instance.Setup();
         for (int i = 0; i < numberOfPlayers; i++) 
         {
             stats.Add(canvas.GetComponentsInChildren<HealthStats>()[i]);
@@ -98,7 +102,7 @@ public class GameManager : Singleton<GameManager>
             Vector3 spawnPosition = CalculatePositionInRing(i, numberOfPlayers);
             Quaternion spawnRotation = CalculateRotation(i);
 
-            GameObject spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation) as GameObject;
+            GameObject spawnedPlayer = Instantiate(playerPrefab[i], spawnPosition, spawnRotation) as GameObject;
             AddPlayerToActivePlayerList(spawnedPlayer.GetComponent<PlayerController>());
         }
     }
@@ -113,6 +117,7 @@ public class GameManager : Singleton<GameManager>
         for (int i = 0; i < activePlayerControllers.Count; i++)
         {
             activePlayerControllers[i].SetupPlayer(stats[i]);
+            target.m_Targets[i].target = activePlayerControllers[i].transform;
         }
     }
 
@@ -124,7 +129,7 @@ public class GameManager : Singleton<GameManager>
         float angle = (positionID) * Mathf.PI * 2 / numberOfPlayers;
         float x = Mathf.Cos(angle) * spawnRingRadius;
         float z = Mathf.Sin(angle) * spawnRingRadius;
-        return spawnRingCenter.position + new Vector3(x, 0, z);
+        return spawnRingCenter.position + new Vector3(x, 3, z);
     }
 
     Quaternion CalculateRotation(int i)
