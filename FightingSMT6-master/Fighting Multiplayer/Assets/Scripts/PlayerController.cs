@@ -52,20 +52,10 @@ public class PlayerController : MonoBehaviour
         raw = dir.x;
     }
     public void OnAttack(InputAction.CallbackContext callback)
-    {
-        if (callback.started)
-        {
-            test = Random.Range(1, 3);
-            anim.AttackAnimation(test);
-        }
-        else if(callback.performed)
+    {   
+        if(callback.started)
         {
             anim.AttackSecond();
-            anim.AttackAnimation(0);
-        }
-        else if (callback.canceled)
-        {
-            anim.AttackAnimation(0);
         }
     }
 

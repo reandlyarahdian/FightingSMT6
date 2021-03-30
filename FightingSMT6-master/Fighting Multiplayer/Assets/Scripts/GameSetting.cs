@@ -10,7 +10,7 @@ public class GameSetting : Singleton<GameSetting>
     public GameMode mode;
     private void Start()
     {
-        DontDestroyOnLoad(Instance);
+        DontDestroyOnLoad(this);
     }
 
     public void Setup()

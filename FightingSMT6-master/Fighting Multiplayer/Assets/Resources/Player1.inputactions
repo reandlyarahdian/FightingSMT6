@@ -19,7 +19,7 @@
                     "id": "e3c4fcdb-99e2-4adc-ae3e-ad868d7dce02",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press"
                 },
                 {
                     "name": "3",
@@ -120,7 +120,7 @@
                     "name": "",
                     "id": "49190314-f9ee-4c82-8a0b-4439541d38e6",
                     "path": "<HID::Twin USB Gamepad      >/button2",
-                    "interactions": "MultiTap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "Player 1",
                     "action": "2",
