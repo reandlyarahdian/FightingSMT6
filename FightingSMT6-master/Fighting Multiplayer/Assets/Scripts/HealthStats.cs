@@ -12,6 +12,8 @@ public class HealthStats : MonoBehaviour
     public GameObject health1, health2;
     public HealthBar healthBar;
 
+    public bool GameDeath = false;
+
     // Start is called before the first frame update
     public void SetupBehaviour()
     {
@@ -35,11 +37,15 @@ public class HealthStats : MonoBehaviour
     {
         CurrentHealth -= i;
         healthBar.SetCurrentHealth(CurrentHealth);
-        if (CurrentHealth <= 0)
+        if (CurrentHealth <= 0 && health1.activeInHierarchy)
         {
             UpdateBar();
+        }else if (CurrentHealth <= 0)
+        {
+            GameDeath = true;
         }
     }
+
 
     public void UpdateBar()
     {

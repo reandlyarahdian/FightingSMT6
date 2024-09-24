@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Rogue
   m_EditorClassIdentifier: 
   characterName: Rogue
-  characterPrefab: {fileID: 23569529772844991, guid: a53935f98f876384f90aa3175c5ec012,
+  characterPrefab: {fileID: 4768460150869026614, guid: 833ce596dfc67da45b4d333e35326ca9,
     type: 3}

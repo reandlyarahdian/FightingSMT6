@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
+using Photon.Realtime;
+using TMPro;
 
-public class MenuManager : MonoBehaviour
+public class MenuManager : MonoBehaviourPunCallbacks
 {
     public GameObject menu;
     public GameObject test;
@@ -21,22 +24,23 @@ public class MenuManager : MonoBehaviour
             }
         }
     }
-
-    public void onCharacterClick(int i)
+    public void onCharacter1Click(int i)
     {
-        if (GameSetting.Instance.gameObjects[0] == null) GameSetting.Instance.gameObjects[0] = selects[i].characterPrefab; 
-        else GameSetting.Instance.gameObjects[1] = selects[i].characterPrefab;
+        GameSetting.Instance.gameObjects[0] = selects[i].characterPrefab;
     }
 
-    public void onSelect()
+    public void onCharacter2Click(int i)
     {
-        SceneManager.LoadScene(1);
+        GameSetting.Instance.gameObjects[1] = selects[i].characterPrefab;
     }
 
+    public void onSelect(int i)
+    {
+        SceneManager.LoadScene(i);
+    }
+
+    public void onOnlineMultiplayer() => GameSetting.Instance.mode = GameMode.OnlineMulyiplayer;
     public void onMultiplayer() => GameSetting.Instance.mode = GameMode.LocalMultiplayer;
-
-    public void onOnlineMultiplayer() => GameSetting.Instance.mode = GameMode.OnlineMultiplayer;
-
     public void onSingleplayer() => GameSetting.Instance.mode = GameMode.SinglePlayer;
 
     public void onExit() => Application.Quit();

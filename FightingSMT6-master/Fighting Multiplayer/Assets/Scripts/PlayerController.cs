@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
-    public PlayerInput input;
+    public UnityEngine.InputSystem.PlayerInput input;
     public Rigidbody character;
     private float raw;
     public float speed;
@@ -15,19 +15,27 @@ public class PlayerController : MonoBehaviour
     public PlayerAnimation anim;
     public string currentControl;
     public HealthStats health;
-    private int test = 0;
+    public int index = 0;
+    
+   
 
-    public void SetupPlayer(HealthStats stats)
+    public void SetupPlayer(HealthStats stats, int i)
     {
         currentControl = input.currentControlScheme;
         stats.SetupBehaviour();
         anim.SetupBehaviour();
         health = stats;
+        index = i;
     }
 
     public void onDamage(int i)
     {
         health.UpdateHealth(i);
+        if (health.GameDeath)
+        {
+            GameManager.Instance.index = index;
+            GameManager.Instance.GameDeath();
+        }
     }
 
     public void OnControlsChanged()
@@ -56,6 +64,7 @@ public class PlayerController : MonoBehaviour
         if(callback.started)
         {
             anim.AttackSecond();
+          
         }
     }
 
@@ -66,6 +75,8 @@ public class PlayerController : MonoBehaviour
             anim.HeavyAttackAnimation();
         }
     }
+
+    
 
     public void OnDefend(InputAction.CallbackContext callback)
     {
@@ -104,4 +115,6 @@ public class PlayerController : MonoBehaviour
             speed = 15f;
         }
     }
+
+  
 }

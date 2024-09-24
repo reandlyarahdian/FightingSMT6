@@ -36,6 +36,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "d5f43245-7f5c-4001-b7ce-b91baaad4df6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -45,7 +53,7 @@
                     "path": "<HID::Twin USB Gamepad      >/hat",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
                     "action": "1",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -56,7 +64,7 @@
                     "path": "<HID::Twin USB Gamepad      >/stick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
                     "action": "1",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -118,11 +126,55 @@
                 },
                 {
                     "name": "",
+                    "id": "0ce02d2a-f35b-4f4d-9627-ee0f4b313ef2",
+                    "path": "<DualShockGamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ef2e1e0-199c-4f09-b949-7f2b135c81aa",
+                    "path": "<DualShockGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94da3150-8afd-4e25-8d70-999bd2f79a62",
+                    "path": "<XInputController>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c5fc56a-31a7-494e-bc81-41843c5aac1d",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "49190314-f9ee-4c82-8a0b-4439541d38e6",
                     "path": "<HID::Twin USB Gamepad      >/button2",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
                     "action": "2",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -140,11 +192,33 @@
                 },
                 {
                     "name": "",
+                    "id": "f0315dfb-608d-4394-ac97-4fa91325044b",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8a949e7-8f06-48fc-a48a-7eed7ba4bd59",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d6c1ab60-b9fd-4562-9d14-c5a9f1ec3ab3",
                     "path": "<HID::Twin USB Gamepad      >/button4",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
                     "action": "3",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -162,11 +236,33 @@
                 },
                 {
                     "name": "",
+                    "id": "6ee4bdc6-a876-4f56-9745-bee45ae52d1f",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26fbd23d-fd5c-49ed-9463-a1165d67ed1f",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e64a59a5-69f6-4829-b70e-81ee1d42186f",
                     "path": "<HID::Twin USB Gamepad      >/trigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
                     "action": "4",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -179,6 +275,61 @@
                     "processors": "",
                     "groups": "KeyBoard And Mouse",
                     "action": "4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83c0fad8-da48-458e-8438-87a553f3f85b",
+                    "path": "<DualShockGamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09e95a53-4c72-4848-8dd4-a15fa9ed08c6",
+                    "path": "<XInputController>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "110851c6-46a1-4ea9-97d0-0f7348e9f700",
+                    "path": "<Keyboard>/Escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoard And Mouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "816ddc29-b972-4f1c-af50-ac5a171d1639",
+                    "path": "<XInputController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7984249-452a-4158-9743-f2a4fa8a2c6d",
+                    "path": "<HID::Twin USB Gamepad      >/button9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Twin USB",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -559,10 +710,32 @@
                 {
                     "name": "",
                     "id": "158c9d09-65fe-45d9-9508-5f2c5fc99cbe",
-                    "path": "<HID::Twin USB Gamepad      >/button4",
+                    "path": "<HID::Twin USB Gamepad      >/button2",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf3fa11f-2043-4b94-8e31-1008759d8394",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6edef2d4-6968-4f73-a5a4-94c1713fafcb",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -596,6 +769,39 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Touch",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3101186d-31c1-4027-963b-eb055eb5ee0a",
+                    "path": "<HID::Twin USB Gamepad      >/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Twin USB",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e50bf93-992d-4b87-aafe-c26eaba5cb14",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f61af62f-ff2a-4f89-a29d-75e13acaf3e4",
+                    "path": "<XInputController>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
                     "action": "Point",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -646,11 +852,33 @@
                 },
                 {
                     "name": "",
-                    "id": "308bfa20-006c-41f4-83c2-86bbab86ab0c",
-                    "path": "<HID::Twin USB Gamepad      >/button3",
+                    "id": "2393e1ff-5455-4326-8861-699ec9ddb73d",
+                    "path": "<HID::Twin USB Gamepad      >/button9",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "Twin USB",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "872aeece-8df1-4648-a695-466324c02426",
+                    "path": "<DualShockGamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4eab420-55d3-4837-9476-4e3247180e41",
+                    "path": "<XInputController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -716,7 +944,7 @@
                     "path": "<HID::Twin USB Gamepad      >/stick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -727,7 +955,51 @@
                     "path": "<HID::Twin USB Gamepad      >/hat",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2edd0ec5-80a1-43f4-b4f1-f4001be49626",
+                    "path": "<XInputController>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8adb8682-873c-4562-b014-83a3e1d4b608",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fdcd9f3b-039b-4d2e-97a1-832d1a6b460d",
+                    "path": "<DualShockGamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a83df2f9-8d8b-4434-982d-2a47c78e4235",
+                    "path": "<DualShockGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -736,9 +1008,31 @@
                     "name": "",
                     "id": "4482ed81-1fe7-4c8f-8dbf-18868abfcf08",
                     "path": "<HID::Twin USB Gamepad      >/button3",
-                    "interactions": "MultiTap",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "Player 1",
+                    "groups": "TwinUSB;Twin USB",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b985227-29d9-48de-b0bd-976bc6f46224",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70776224-5636-4f2f-aa49-73e39158df5d",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -748,8 +1042,8 @@
     ],
     "controlSchemes": [
         {
-            "name": "Player 1",
-            "bindingGroup": "Player 1",
+            "name": "Twin USB",
+            "bindingGroup": "Twin USB",
             "devices": [
                 {
                     "devicePath": "<HID::Twin USB Gamepad      >",
@@ -769,6 +1063,28 @@
                 },
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PS4",
+            "bindingGroup": "PS4",
+            "devices": [
+                {
+                    "devicePath": "<DualShockGamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Xbox",
+            "bindingGroup": "Xbox",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
                     "isOptional": false,
                     "isOR": false
                 }

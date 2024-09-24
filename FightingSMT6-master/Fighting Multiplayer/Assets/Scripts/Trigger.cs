@@ -13,6 +13,7 @@ public class Trigger : MonoBehaviour
         if (other.CompareTag(Tag))
         {
             @event.Invoke();
+            
         }
     }
 }

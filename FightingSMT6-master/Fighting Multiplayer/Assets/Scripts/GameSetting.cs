@@ -15,7 +15,7 @@ public class GameSetting : Singleton<GameSetting>
 
     public void Setup()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             GameManager.Instance.currentGameMode = mode;
             GameManager.Instance.playerPrefab = gameObjects;

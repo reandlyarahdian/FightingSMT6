@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Cinemachine;
+using TMPro;
+using System;
+using Photon.Pun;
+using Photon.Realtime;
 
 public enum GameMode
 {
     SinglePlayer,
     LocalMultiplayer,
-    OnlineMultiplayer
+    OnlineMulyiplayer
 }
 
 public class GameManager : Singleton<GameManager>
@@ -19,6 +23,7 @@ public class GameManager : Singleton<GameManager>
 
     //Single Player
     public GameObject inScenePlayer;
+    public GameObject insceneEnemy;
 
     //Local Multiplayer
     public GameObject[] playerPrefab;
@@ -27,13 +32,24 @@ public class GameManager : Singleton<GameManager>
     public Transform spawnRingCenter;
     public float spawnRingRadius;
 
+    public Transform[] spawnpoints;
+
     public GameObject canvas;
 
     public CinemachineTargetGroup target;
 
+    public GameObject death, PopUp;
+
+    public TextMeshProUGUI text;
+
+    public int index;
+
     //Spawned Players
     private List<PlayerController> activePlayerControllers;
+    private List<AI> activeAIEnemy;
     public List<HealthStats> stats;
+
+
     void Start()
     {
         GameSetting.Instance.Setup();
@@ -55,7 +71,7 @@ public class GameManager : Singleton<GameManager>
             case GameMode.LocalMultiplayer:
                 SetupLocalMultiplayer();
                 break;
-            case GameMode.OnlineMultiplayer:
+            case GameMode.OnlineMulyiplayer:
                 SetupOnlineMultiplayer();
                 break;
         }
@@ -63,20 +79,40 @@ public class GameManager : Singleton<GameManager>
 
     private void SetupOnlineMultiplayer()
     {
-        throw new System.NotImplementedException();
+        activePlayerControllers = new List<PlayerController>();
+
+        for (int i = 0; i < spawnpoints.Length; i++)
+        {
+            AddPlayerToActivePlayerList(spawnpoints[i].GetComponentInChildren<PlayerController>());
+        }
+
+        SetupActivePlayers();
     }
 
     void SetupSinglePlayer()
     {
         activePlayerControllers = new List<PlayerController>();
-
-        if (inScenePlayer == true)
+        activeAIEnemy = new List<AI>();
+        if (inScenePlayer == true )
         {
             AddPlayerToActivePlayerList(inScenePlayer.GetComponent<PlayerController>());
-        }else 
+            
+        }
+        else if (insceneEnemy == true)
+        {
+            AddEnemyToActiveList(insceneEnemy.GetComponent<AI>());
+        }
+        else
+        {
             SpawnPlayers();
+            SpawnAiEnemy();
+        }
+
+        SetupAIEnemy();
 
         SetupActivePlayers();
+
+       
     }
 
     void SetupLocalMultiplayer()
@@ -92,6 +128,14 @@ public class GameManager : Singleton<GameManager>
         SetupActivePlayers();
     }
 
+    public void GameDeath()
+    {
+        index = index % 2 == 0 ? 1 : 2;
+        text.text = "Player " + index + " Win";
+        death.SetActive(true);
+        PopUp.SetActive(true);
+    }
+
     void SpawnPlayers()
     {
 
@@ -99,11 +143,21 @@ public class GameManager : Singleton<GameManager>
 
         for (int i = 0; i < numberOfPlayers; i++)
         {
-            Vector3 spawnPosition = CalculatePositionInRing(i, numberOfPlayers);
-            Quaternion spawnRotation = CalculateRotation(i);
-
-            GameObject spawnedPlayer = Instantiate(playerPrefab[i], spawnPosition, spawnRotation) as GameObject;
+            GameObject spawnedPlayer = Instantiate(playerPrefab[i], spawnpoints[i].position, spawnpoints[i].rotation) as GameObject;
             AddPlayerToActivePlayerList(spawnedPlayer.GetComponent<PlayerController>());
+
+        }
+    }
+
+    void SpawnAiEnemy()
+    {
+
+        activeAIEnemy = new List<AI>();
+
+        for (int i = 0; i < numberOfPlayers; i++)
+        {
+            GameObject spawnedEnemy = Instantiate(playerPrefab[i], spawnpoints[i].position, spawnpoints[i].rotation) as GameObject;
+            AddEnemyToActiveList(spawnedEnemy.GetComponent<AI>());
         }
     }
 
@@ -112,12 +166,26 @@ public class GameManager : Singleton<GameManager>
         activePlayerControllers.Add(newPlayer);
     }
 
+    void AddEnemyToActiveList(AI newAI)
+    {
+        activeAIEnemy.Add(newAI);
+    }
+
     void SetupActivePlayers()
     {
         for (int i = 0; i < activePlayerControllers.Count; i++)
         {
-            activePlayerControllers[i].SetupPlayer(stats[i]);
+            activePlayerControllers[i].SetupPlayer(stats[i], i + 1);
             target.m_Targets[i].target = activePlayerControllers[i].transform;
+        }
+    }
+
+    void SetupAIEnemy()
+    {
+        for (int i = 0; i < activeAIEnemy.Count; i++)
+        {
+            activeAIEnemy[i].SetupPAI(stats[i], i + 1);
+           
         }
     }
 
@@ -138,4 +206,14 @@ public class GameManager : Singleton<GameManager>
         return Quaternion.Euler(new Vector3(0, y, 0));
     }
 
+    public void BackMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    
+    public void Retry()
+    {
+        SceneManager.LoadScene("SampleScene 2");
+        GameSetting.Instance.mode = GameMode.LocalMultiplayer;
+    }
 }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   characterName: Sword
-  characterPrefab: {fileID: 8211465435764300798, guid: de58518ce979e884ab96f18ff519da8d,
+  characterPrefab: {fileID: 1940780772831348100, guid: 30ece05e005abac44bb60ad58d017164,
     type: 3}

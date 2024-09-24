@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     public Animator anim;
-
+    
     //Animation String IDs
     private int Move;
     private int Attack;
@@ -25,6 +25,7 @@ public class PlayerAnimation : MonoBehaviour
         Defend = Animator.StringToHash("3");
         RandomAttack = Animator.StringToHash("4");
         HeavyAttack = Animator.StringToHash("5");
+      
     }
 
     public void MovementAnimation(float movementBlendValue)
