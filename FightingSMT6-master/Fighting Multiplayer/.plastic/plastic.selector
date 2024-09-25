@@ -1,0 +1,4 @@
+repository "Fighting Multiplayer@unity_JWtI2YaNjPH2jw@cloud"
+  path "/"
+    br "/main"
+    co "/main"
