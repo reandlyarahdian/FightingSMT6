@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 5646f394c22743b43b90f9eafb8fc352
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 1414577525302264584
+    second: Attack_Combo_V1
+  - first:
+      74: -3836873898571697436
+    second: Attack_Heavy_V1
+  - first:
+      74: -5959500101195568007
+    second: Move_Forward
+  - first:
+      74: 8925044659521273951
+    second: Defend
+  - first:
+      74: 8125806463772978211
+    second: Get_Hit_V1
+  - first:
+      74: -3100369314251171874
+    second: Idle
+  - first:
+      74: 592729814954525765
+    second: Armature|Combo_Heavy_Full
+  - first:
+      74: 7573123231580469982
+    second: Armature|Combo_Light_Full
+  - first:
+      74: 5565499594607803373
+    second: 'Armature|Dead '
+  - first:
+      74: 4002968255540528744
+    second: Armature|Dead _MID
+  - first:
+      74: -7737000216430242122
+    second: Armature|Defend
+  - first:
+      74: 3290062776717546873
+    second: Armature|Defend_MID
+  - first:
+      74: -8057146505350939521
+    second: Armature|DOWN
+  - first:
+      74: 5029827485697407838
+    second: Armature|DOWN_MID
+  - first:
+      74: 2751022265696017984
+    second: Armature|Get_Hit_V1
+  - first:
+      74: -7465495671213378347
+    second: Armature|Get_Hit_V2
+  - first:
+      74: -1151942602646654180
+    second: Armature|H1
+  - first:
+      74: 3870798648537028586
+    second: Armature|H1 > H2
+  - first:
+      74: 3630392724690457431
+    second: Armature|H1 > H2_MID
+  - first:
+      74: 133466987008925801
+    second: Armature|H1 > IDLE
+  - first:
+      74: -5755102596902193918
+    second: Armature|H1 > IDLE_MID
+  - first:
+      74: 5709664024746142542
+    second: Armature|H1 > L2
+  - first:
+      74: -4647585917423285961
+    second: Armature|H1 > L2_MID
+  - first:
+      74: 2282526934832384753
+    second: Armature|H1_MID
+  - first:
+      74: 9195020499918050688
+    second: 'Armature|H2 '
+  - first:
+      74: -6961387041386707981
+    second: Armature|H2 > H3
+  - first:
+      74: -3623523700966731345
+    second: Armature|H2 > H3_MID
+  - first:
+      74: -241468042933582994
+    second: Armature|H2 > IDLE
+  - first:
+      74: 8529368000194605768
+    second: Armature|H2 > IDLE_MID
+  - first:
+      74: 179924312926764152
+    second: Armature|H2 > L3
+  - first:
+      74: 7421834794041440219
+    second: Armature|H2 > L3_MID
+  - first:
+      74: 5631208344652048429
+    second: Armature|H2_MID
+  - first:
+      74: 6186477904422859830
+    second: 'Armature|H3 '
+  - first:
+      74: -5109815050634230525
+    second: Armature|H3 > IDLE
+  - first:
+      74: -2328952602182682028
+    second: Armature|H3 > IDLE_MID
+  - first:
+      74: -38229057673041864
+    second: Armature|H3_MID
+  - first:
+      74: -8945691123924629249
+    second: Armature|Idle
+  - first:
+      74: -1945132820058353755
+    second: Armature|Idle_MID
+  - first:
+      74: -3176938990820386580
+    second: 'Armature|L1 '
+  - first:
+      74: 6720598959362358414
+    second: Armature|L1 > H2
+  - first:
+      74: 3846158693326297813
+    second: Armature|L1 > H2_MID
+  - first:
+      74: -2266318366620645500
+    second: Armature|L1 > IDLE
+  - first:
+      74: 2499466112892706022
+    second: Armature|L1 > IDLE_MID
+  - first:
+      74: -7951032912427830288
+    second: Armature|L1 > L2
+  - first:
+      74: 3646908987729701770
+    second: Armature|L1 > L2_MID
+  - first:
+      74: 4002980861656862096
+    second: Armature|L1_MID
+  - first:
+      74: 6157783308597149041
+    second: Armature|L2
+  - first:
+      74: 2347408854807597656
+    second: Armature|L2 > H3
+  - first:
+      74: 775615797862895385
+    second: Armature|L2 > H3_MID
+  - first:
+      74: -7276276722432928479
+    second: Armature|L2 > IDLE
+  - first:
+      74: -4657468153756927374
+    second: Armature|L2 > IDLE_MID
+  - first:
+      74: -6163407635113762797
+    second: Armature|L2 > L3
+  - first:
+      74: -798366412986475234
+    second: Armature|L2 > L3_MID
+  - first:
+      74: 6278914115296738355
+    second: Armature|L2_MID
+  - first:
+      74: -702884851106908385
+    second: Armature|L3
+  - first:
+      74: -6350122362768196996
+    second: Armature|L3 > IDLE
+  - first:
+      74: 4180924080877386324
+    second: Armature|L3 > IDLE_MID
+  - first:
+      74: -7454183890713429964
+    second: Armature|L3_MID
+  - first:
+      74: 2002649663757378325
+    second: Armature|Move_Backward
+  - first:
+      74: 791851587979897518
+    second: Armature|Move_Forward
+  - first:
+      74: -2452862097807302286
+    second: Armature|MOVE_TEST
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

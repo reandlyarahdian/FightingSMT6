@@ -1,0 +1,641 @@
+fileFormatVersion: 2
+guid: e1fa82675a25697409ab5febfc611913
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3036040558316842834
+    second: Bodoamattt_0
+  - first:
+      213: -1279495936793031499
+    second: Bodoamattt_1
+  - first:
+      213: 8716917224082362885
+    second: Bodoamattt_2
+  - first:
+      213: 1881736099067340315
+    second: Bodoamattt_3
+  - first:
+      213: -5014552294826677575
+    second: Bodoamattt_4
+  - first:
+      213: 931297586630010378
+    second: Bodoamattt_5
+  - first:
+      213: 5625605202868290327
+    second: Bodoamattt_6
+  - first:
+      213: -9053508880843631004
+    second: Bodoamattt_7
+  - first:
+      213: 4565601450828246842
+    second: Bodoamattt_8
+  - first:
+      213: -6823146954692821544
+    second: Bodoamattt_9
+  - first:
+      213: 7858748584832160793
+    second: Bodoamattt_10
+  - first:
+      213: 6514088638251913610
+    second: Bodoamattt_11
+  - first:
+      213: 799051786525712654
+    second: Bodoamattt_12
+  - first:
+      213: -5143869014430423361
+    second: Bodoamattt_13
+  - first:
+      213: -5379579027414130140
+    second: Bodoamattt_14
+  - first:
+      213: -8481881728813806321
+    second: Bodoamattt_15
+  - first:
+      213: 1364518378876915587
+    second: Bodoamattt_16
+  - first:
+      213: -3981254395826298978
+    second: Bodoamattt_17
+  - first:
+      213: 3761345354743039872
+    second: Bodoamattt_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bodoamattt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3517
+        height: 2537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f672a5dce222a20800000000000000
+      internalID: 3036040558316842834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_1
+      rect:
+        serializedVersion: 2
+        x: 5050
+        y: 2334
+        width: 693
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc45eb79315e3ee0800000000000000
+      internalID: -1279495936793031499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_2
+      rect:
+        serializedVersion: 2
+        x: 5491
+        y: 2367
+        width: 250
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502d9e5f706b8f870800000000000000
+      internalID: 8716917224082362885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_3
+      rect:
+        serializedVersion: 2
+        x: 5783
+        y: 2345
+        width: 706
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1620f123054d1a10800000000000000
+      internalID: 1881736099067340315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_4
+      rect:
+        serializedVersion: 2
+        x: 6017
+        y: 0
+        width: 481
+        height: 2537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba6c3f814bb86ab0800000000000000
+      internalID: -5014552294826677575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_5
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 1717
+        width: 550
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06a2478832acec00800000000000000
+      internalID: 931297586630010378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_6
+      rect:
+        serializedVersion: 2
+        x: 4482
+        y: 1739
+        width: 234
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713cd83502a221e40800000000000000
+      internalID: 5625605202868290327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_7
+      rect:
+        serializedVersion: 2
+        x: 4774
+        y: 1736
+        width: 599
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4669872f3a97b5280800000000000000
+      internalID: -9053508880843631004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_8
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1524
+        width: 1472
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f20a674564c5f30800000000000000
+      internalID: 4565601450828246842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_9
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1337
+        width: 1472
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddfe3bceff4f41a0800000000000000
+      internalID: -6823146954692821544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_10
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1156
+        width: 1472
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91456025332ef0d60800000000000000
+      internalID: 7858748584832160793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_11
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 963
+        width: 1472
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81d9667a11b66a50800000000000000
+      internalID: 6514088638251913610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_12
+      rect:
+        serializedVersion: 2
+        x: 4028
+        y: 791
+        width: 1472
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01a105cd5dc61b00800000000000000
+      internalID: 799051786525712654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_13
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 65
+        width: 130
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb66cbf726e4d98b0800000000000000
+      internalID: -5143869014430423361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_14
+      rect:
+        serializedVersion: 2
+        x: 4187
+        y: 94
+        width: 247
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422e6d57065e755b0800000000000000
+      internalID: -5379579027414130140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_15
+      rect:
+        serializedVersion: 2
+        x: 4463
+        y: 71
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d4d2fa18d4a4a80800000000000000
+      internalID: -8481881728813806321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_16
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 94
+        width: 288
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f437e6c3ebfe210800000000000000
+      internalID: 1364518378876915587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_17
+      rect:
+        serializedVersion: 2
+        x: 4901
+        y: 71
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f9f48783ebfb8c0800000000000000
+      internalID: -3981254395826298978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bodoamattt_18
+      rect:
+        serializedVersion: 2
+        x: 5034
+        y: 94
+        width: 187
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0874603fbabf23430800000000000000
+      internalID: 3761345354743039872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bodoamattt_0: 3036040558316842834
+      Bodoamattt_1: -1279495936793031499
+      Bodoamattt_10: 7858748584832160793
+      Bodoamattt_11: 6514088638251913610
+      Bodoamattt_12: 799051786525712654
+      Bodoamattt_13: -5143869014430423361
+      Bodoamattt_14: -5379579027414130140
+      Bodoamattt_15: -8481881728813806321
+      Bodoamattt_16: 1364518378876915587
+      Bodoamattt_17: -3981254395826298978
+      Bodoamattt_18: 3761345354743039872
+      Bodoamattt_2: 8716917224082362885
+      Bodoamattt_3: 1881736099067340315
+      Bodoamattt_4: -5014552294826677575
+      Bodoamattt_5: 931297586630010378
+      Bodoamattt_6: 5625605202868290327
+      Bodoamattt_7: -9053508880843631004
+      Bodoamattt_8: 4565601450828246842
+      Bodoamattt_9: -6823146954692821544
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
